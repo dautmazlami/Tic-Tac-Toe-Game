@@ -11,10 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans:wght@400;700&family=Oswald&family=Roboto:wght@400;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/overlays.css">
-    <link rel="stylesheet" href="styles/configuration.css">
-    <link rel="stylesheet" href="styles/game.css">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/overlays.css" />
+    <link rel="stylesheet" href="styles/configuration.css" />
+    <link rel="stylesheet" href="styles/game.css" />
     <script src="/scripts/config.js" defer></script>
     <script src="/scripts/game.js" defer></script>
     <script src="/scripts/app.js" defer></script>
@@ -32,11 +32,13 @@
         <form>
           <div class="form-control">
             <label for="playername">Player Name</label>
-            <input type="text" name="playername" id="playername" required/>
+            <input type="text" name="playername" id="playername" required />
           </div>
           <p id="config-errors"></p>
           <div>
-            <button type="reset" class="btn btn-alt" id="cancel-config-btn">Cancel</button>
+            <button type="reset" class="btn btn-alt" id="cancel-config-btn">
+              Cancel
+            </button>
             <button type="submit" class="btn">Confirm</button>
           </div>
         </form>
@@ -45,19 +47,31 @@
       <section id="game-configuration">
         <ol>
           <li>
-            <article>
+            <article id="player-1-data">
               <h2>Player 1</h2>
               <h3>PLAYER NAME</h3>
               <p class="player-symbol">X</p>
-              <button class="btn btn-alt" id="edit-player1-btn">Edit</button>
+              <button
+                class="btn btn-alt"
+                id="edit-player1-btn"
+                data-playerid="1"
+              >
+                Edit
+              </button>
             </article>
           </li>
           <li>
-            <article>
+            <article id="player-2-data">
               <h2>Player 2</h2>
               <h3>PLAYER NAME</h3>
               <p class="player-symbol">O</p>
-              <button class="btn btn-alt" id="edit-player2-btn">Edit</button>
+              <button
+                class="btn btn-alt"
+                id="edit-player2-btn"
+                data-playerid="2"
+              >
+                Edit
+              </button>
             </article>
           </li>
         </ol>
