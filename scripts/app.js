@@ -23,6 +23,8 @@ const editPlayer2Btn = document.getElementById('edit-player2-btn');
 const cancelConfigBtn = document.getElementById('cancel-config-btn');
 const startNewGameBtnElement = document.getElementById('start-game-btn');
 const gameFieldElements = document.querySelectorAll('#game-board li');
+//const gameBoardElement = document.getElementById('game-board'); Alternative way of handling the click on the game board
+const activePlayerNameElement = document.getElementById('active-player-name');
 
 editPlayer1Btn.addEventListener('click',openPlayerConfig);
 editPlayer2Btn.addEventListener('click',openPlayerConfig);
@@ -37,3 +39,5 @@ startNewGameBtnElement.addEventListener('click',startNewGame);
 for (const gameFieldElement of gameFieldElements) {
     gameFieldElement.addEventListener('click', selectGameField);
 }
+
+//gameBoardElement.addEventListener('click',selectGameField); Alternative way of handling the click on the game board
