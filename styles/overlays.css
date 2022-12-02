@@ -8,9 +8,9 @@
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     display: none;
-}
-
-#backdrop {
+  }
+  
+  #backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -18,11 +18,11 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     display: none;
-}
-
-@media (min-width: 48rem) {
+  }
+  
+  @media (min-width: 48rem) {
     .modal {
-        left: calc(50% - 20rem);
-        width: 40rem;
+      left: calc(50% - 20rem);
+      width: 40rem;
     }
-}
+  }
